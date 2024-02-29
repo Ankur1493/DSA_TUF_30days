@@ -2,12 +2,13 @@
 
 ## BRUTE FORCE 
 
-1) we will iterate over the matrix and turn every row and column to -1 which contains 0, except the cells with 0
-2) Then we will iterate over the matrix again and turn -1to 0
+1) We will iterate over the matrix and turn every row and column to -1 which contains 0, except the cells with 0.
+2) Then we will iterate over the matrix again and turn -1 to 0.
 
-**Time Complexity** - O(n*m)(n+m) nearly O(n^3)
+**Time Complexity:** O(n*m)(n+m) nearly O(n^3)
 
 **CODE**
+```cpp
 class Solution {
 public:
 
@@ -51,7 +52,7 @@ void markCol(vector<vector<int>> &matrix, int n, int m, int j) {
         }
     }
 };
-
+```
 ## Better
 
 1) create two arrays of length no of row and col
@@ -60,9 +61,8 @@ void markCol(vector<vector<int>> &matrix, int n, int m, int j) {
 
 **Time Complexity** - O(n*m) nearly O(n^2)
 
-
 **CODE**
-
+```cpp
 class Solution {
 public:
     void setZeroes(vector<vector<int>>& matrix) {
@@ -90,4 +90,4 @@ public:
         }
     }
 };
-
+```
